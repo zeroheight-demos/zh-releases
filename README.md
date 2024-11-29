@@ -27,16 +27,25 @@ General usage example:
 Example using a custom template:
 
 ```html
-<script type="module" src="zh-releases.js"></script>
+<template id="custom-template">
+  <ol>
+    <li data-key="release">
+      <a data-key="release_url"><span data-key="name"></span></a>
+    </li>
+  </ol>
+</template>
 
-<zh-releases attribute="value">
-  <button>Button</button>
-</zh-releases>
-<style>
-  zh-releases[attribute="value"] {
-    outline: 1px solid red;
-  }
-</style>
+<zh-releases template="custom-template"></zh-releases>
+
+<script>
+  const zhAPI = {
+    key: "zhat_6EuAaaw0lUQ-zGW-t1ehRQzIQpwZGa3X8d3DU0L7",
+    client: "zhci_N2LaYV4Na37nvOzm13Q3F8N4nMWsIJe_QXhF2ToW",
+    styleguide: 114183,
+  };
+</script>
+
+<script type="module" src="zh-releases.js"></script>
 ```
 
 ## Features
@@ -69,21 +78,43 @@ const zhAPI = {
 
 Make sure you include the `<script>` in your project (choose one of these):
 
-```html
+````html
 <!-- Host yourself -->
-<script type="module" src="zh-releases.js"></script>
-```
+<script>
+  const zhAPI = {
+    key: "zhat_6EuAaaw0lUQ-zGW-t1ehRQzIQpwZGa3X8d3DU0L7",
+    client: "zhci_N2LaYV4Na37nvOzm13Q3F8N4nMWsIJe_QXhF2ToW",
+    styleguide: 114183,
+  };
+</script>
 
-```html
+<script type="module" src="zh-releases.js"></script>
+``` ```html
 <!-- 3rd party CDN, not recommended for production use -->
+<script>
+  const zhAPI = {
+    key: "zhat_6EuAaaw0lUQ-zGW-t1ehRQzIQpwZGa3X8d3DU0L7",
+    client: "zhci_N2LaYV4Na37nvOzm13Q3F8N4nMWsIJe_QXhF2ToW",
+    styleguide: 114183,
+  };
+</script>
+
 <script
   type="module"
   src="https://www.unpkg.com/@zeroheight/zh-releases@1.0.0/zh-releases.js"
 ></script>
-```
+````
 
 ```html
 <!-- 3rd party CDN, not recommended for production use -->
+<script>
+  const zhAPI = {
+    key: "zhat_6EuAaaw0lUQ-zGW-t1ehRQzIQpwZGa3X8d3DU0L7",
+    client: "zhci_N2LaYV4Na37nvOzm13Q3F8N4nMWsIJe_QXhF2ToW",
+    styleguide: 114183,
+  };
+</script>
+
 <script
   type="module"
   src="https://esm.sh/@zeroheight/zh-releases@1.0.0"
