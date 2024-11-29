@@ -4,8 +4,6 @@ A Web Component for embedding design systems releases on any page.
 
 **[Demo](https://zeroheight-demos.github.io/zh-releases/demo.html)** | **[Further reading](https://zeroheight.com/show-release-history-anywhere/)**
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/zeroheight-demos/zh-releases?file=zh-releases.js&initialPath=/demo.html)
-
 ## Examples
 
 General usage example:
