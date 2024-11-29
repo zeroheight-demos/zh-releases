@@ -2,7 +2,7 @@
 
 A Web Component for embedding design systems releases on any page.
 
-**[Demo](https://zeroheight-demos.github.io/zh-releases/demo.html)** | **[Further reading](https://darn.es/web-component-github-starter-template/)**
+**[Demo](https://zeroheight-demos.github.io/zh-releases/demo.html)** | **[Further reading](https://zeroheight.com/show-release-history-anywhere/)**
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/zeroheight-demos/zh-releases?file=zh-releases.js&initialPath=/demo.html)
 
@@ -51,7 +51,7 @@ This Web Component allows you to:
 
 You have a few options (choose one of these):
 
-1. Install via [npm](https://www.npmjs.com/package/@zeroheight/zh-releases): `npm install @daviddarnes/zh-releases`
+1. Install via [npm](https://www.npmjs.com/package/@zeroheight/zh-releases): `npm install @zeroheight/zh-releases`
 1. [Download the source manually from GitHub](https://github.com/zeroheight-demos/zh-releases/releases) into your project.
 1. Skip this step and use the script directly via a 3rd party CDN (not recommended for production use)
 
