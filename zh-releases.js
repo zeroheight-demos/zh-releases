@@ -36,19 +36,19 @@ class zhReleases extends HTMLElement {
       releaseTemplate.parentNode.append(template);
     });
 
-    const releases = this.slots.filter(
-      (slot) => slot.dataset.key === "release"
-    );
+    const slots = this.slots;
+
+    const releases = slots.filter((slot) => slot.dataset.key === "release");
 
     releases.map((release, index) => {
       let data = versions[index];
       data.created = this.formatDate(data.created_at);
 
-      const slots = this.slots.filter(
+      const releaseSlots = slots.filter(
         (slot) => release.contains(slot) && slot !== release
       );
 
-      slots.map((slot) => {
+      releaseSlots.map((slot) => {
         if (slot.dataset.key === "release_notes") {
           slot.innerHTML = data[slot.dataset.key];
         } else {
