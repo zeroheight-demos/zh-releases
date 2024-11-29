@@ -78,7 +78,7 @@ const zhAPI = {
 
 Make sure you include the `<script>` in your project (choose one of these):
 
-````html
+```html
 <!-- Host yourself -->
 <script>
   const zhAPI = {
@@ -89,7 +89,9 @@ Make sure you include the `<script>` in your project (choose one of these):
 </script>
 
 <script type="module" src="zh-releases.js"></script>
-``` ```html
+```
+
+```html
 <!-- 3rd party CDN, not recommended for production use -->
 <script>
   const zhAPI = {
@@ -103,7 +105,7 @@ Make sure you include the `<script>` in your project (choose one of these):
   type="module"
   src="https://www.unpkg.com/@zeroheight/zh-releases@1.0.0/zh-releases.js"
 ></script>
-````
+```
 
 ```html
 <!-- 3rd party CDN, not recommended for production use -->
