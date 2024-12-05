@@ -29,9 +29,9 @@ class zhReleases extends HTMLElement {
     this.append(this.template);
 
     const releaseTemplate = this.querySelector("[data-key='release']");
-    const { versions } = await this.data;
+    const versions = await this.data;
 
-    versions.slice(1).map((version) => {
+    versions.slice(1).map(() => {
       const template = releaseTemplate.cloneNode(true);
       releaseTemplate.parentNode.append(template);
     });
@@ -69,15 +69,18 @@ class zhReleases extends HTMLElement {
   }
 
   get data() {
-    return fetch(`https://zeroheight.com/open_api/v2/styleguide_versions`, {
-      method: "GET",
-      headers: {
-        "X-API-KEY": zhAPI.key,
-        "X-API-CLIENT": zhAPI.client,
-      },
-    })
+    return fetch(
+      `https://zeroheight.com/open_api/v2/styleguides/${zhAPI.styleguide}/versions`,
+      {
+        method: "GET",
+        headers: {
+          "X-API-KEY": zhAPI.key,
+          "X-API-CLIENT": zhAPI.client,
+        },
+      }
+    )
       .then((res) => res.json())
-      .then((json) => json.data);
+      .then((json) => json.data.versions);
   }
 
   get slots() {
