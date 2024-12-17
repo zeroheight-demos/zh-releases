@@ -1,5 +1,5 @@
 {
-  "name": "@zeroheight/zh-releases",
+  "name": "@zeroheight-demos/zh-releases",
   "version": "1.0.0",
   "description": "A Web Component for embedding design systems releases on any page",
   "main": "zh-releases.js",
