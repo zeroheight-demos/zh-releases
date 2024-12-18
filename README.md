@@ -2,7 +2,7 @@
 
 A Web Component for embedding design systems releases on any page.
 
-**[Demo](https://zeroheight-demos.github.io/zh-releases/demo.html)** | **[Further reading](https://zeroheight.com/show-release-history-anywhere/)**
+**[Demo](https://zeroheight-demos.github.io/zh-releases/demo.html)** | **[Further reading](https://zeroheight.com/blog/zeroheight-api-tutorial-add-design-system-releases-to-any-website)**
 
 ## Examples
 
